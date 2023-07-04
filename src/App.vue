@@ -46,20 +46,18 @@ onMounted (() => {
 
 <main class="app">
   <section class="greeting">
-    <h2 class="title">
-      Hello there, <input type="text" placeholder="Name here" v-model="name">
+    <h2 class="pb-4 title text-secondary">
+      Hello there, <input type="text" placeholder="Name here" class="text-white" v-model="name">
     </h2>
   </section>
 
   <section class="create-todo">
-    <h3>Create a Todo</h3>
     <form @submit.prevent="addTodo">
-      <h4>Whats on your todo list?</h4>
-      <input type="text" placeholder="eg. pick up kids from school" v-model="input_content">
+      <input type="text" class="h4 text-white border-secondary" placeholder="What needs done?" v-model="input_content">
 
-      <h4>Pick a category</h4>
+      <h4 class="pt-5 text-secondary">Pick a category</h4>
 
-      <div class="options">
+      <div class="options pt-3 pb-3 text-white">
 
         <label>
           <input type="radio" name="category" id="category1" value="business" v-model="input_category">
@@ -81,7 +79,8 @@ onMounted (() => {
 
       </div>
 
-      <input type="submit" value="Add todo">
+      <button type="submit" class="btn btn-success fw-bold" value="Add todo">ADD</button>
+
     </form>
   </section>
 
@@ -99,7 +98,7 @@ onMounted (() => {
         </div>
 
         <div class="actions">
-          <button class="delete" @click="removetoDo(todo)">Delete</button>
+          <button type="button" class="btn btn-danger fw-bold" @click="removetoDo(todo)">DELETE</button>
         </div>
       </div>
     </div>
