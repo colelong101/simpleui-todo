@@ -44,7 +44,7 @@ section {
 }
 
 h3 {
-	color: var(--dark);
+	color: var(--primary);
 	font-size: 1rem;
 	font-weight: 400;
 	margin-bottom: 0.5rem;
@@ -125,6 +125,16 @@ input[type="checkbox"] {
 
 .bubble.personal {
 	border-color: var(--personal);
+	box-shadow: var(--personal-glow);
+}
+
+.bubble.school {
+	border-color: #ff5b57;
+	box-shadow: var(--danger);
+}
+
+.bubble.bubble.school::after {
+	background-color: var(--danger);
 	box-shadow: var(--personal-glow);
 }
 
