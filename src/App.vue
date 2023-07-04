@@ -52,7 +52,7 @@ onMounted (() => {
   </section>
 
   <section class="create-todo">
-    <h3>Create a ToDo</h3>
+    <h3>Create a Todo</h3>
     <form @submit.prevent="addTodo">
       <h4>Whats on your todo list?</h4>
       <input type="text" placeholder="eg. pick up kids from school" v-model="input_content">
