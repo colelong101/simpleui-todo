@@ -59,17 +59,19 @@ h4 {
 
 .greeting .title {
 	display: flex;
+  color: var(--primary);
 }
 
 .greeting .title input {
 	margin-left: 0.5rem;
 	flex: 1 1 0%;
 	min-width: 0;
+  color: var(--primary);
 }
 
 .greeting .title,
 .greeting .title input {
-	color: var(--primary);
+	color: var(--);
 	font-size: 1.5rem;
 	font-weight: 700;
 }
